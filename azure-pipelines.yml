@@ -6,9 +6,12 @@
 trigger: none
 
 schedules:
-- cron: 45 11 * * *
+- cron: "50 11 * * *"
   displayName: c_j
- 
+  branches:
+    include:
+    - master
+
 pool:
   vmImage: ubuntu-latest
 
