@@ -10,7 +10,7 @@ pool:
 
 resources: 
   pipelines:
-  - pipeline: 1stpipeline  # identifier for the resource used in pipeline resource variables
+  - pipeline: sourcepipeline  # identifier for the resource used in pipeline resource variables
     source: build_pipeline  # name of the pipeline that produces an artifact
     trigger: true    # triggers aren't enabled by default unless you add trigger section to the resource
 
@@ -19,5 +19,5 @@ steps:
   displayName: 'Run a one-line script'
 
 - script: |
-    echo the source pipeline '${{ resources.pipeline.1stpipeline.pipelineName }}'
+    echo the source pipeline '${{ resources.pipeline.sourcepipeline.pipelineName }}'
   displayName: 'Release_Pipeline'
