@@ -19,5 +19,5 @@ steps:
   displayName: 'Run a one-line script'
 
 - script: |
-    echo the source pipeline '${{resources.pipeline.build_pipeline.pipelinename}}'
+    echo the source pipeline '${{ resources.pipeline.build_pipeline.pipelineName }}'
   displayName: 'Release_Pipeline'
