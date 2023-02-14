@@ -16,6 +16,5 @@ resources:
 
 steps:
 
-- script: |
-    echo '${{ resources.pipeline.sourcepipeline.pipelineName }}'
+- script: echo '${{ resources.pipeline.sourcepipeline.pipelineName }}'
   displayName: 'Release_Pipeline'
