@@ -15,8 +15,6 @@ resources:
     trigger: true    # triggers aren't enabled by default unless you add trigger section to the resource
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
 
 - script: |
     echo '${{ resources.pipeline.sourcepipeline.pipelineName }}'
