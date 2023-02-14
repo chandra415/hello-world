@@ -10,9 +10,9 @@ pool:
 
 resources: 
   pipelines:
-  - pipeline: sourcepipeline  # identifier for the resource used in pipeline resource variables
-    source: build_pipeline  # name of the pipeline that produces an artifact
-    trigger: true    # triggers aren't enabled by default unless you add trigger section to the resource
+  - pipeline: sourcepipeline
+    source: build_pipeline
+    trigger: true
 
 steps:
 - script: echo This is second pipeline
