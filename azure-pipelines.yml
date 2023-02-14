@@ -5,6 +5,10 @@
 
 trigger: none
 
+schedules:
+- cron: 45 11 * * *
+  displayName: c_j
+ 
 pool:
   vmImage: ubuntu-latest
 
